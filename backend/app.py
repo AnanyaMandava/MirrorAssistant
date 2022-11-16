@@ -38,3 +38,24 @@ def start_recording():
     Thread(target=start_speech).start()
     Thread(target=start_vision).start()
     return jsonify(success=True)
+
+
+
+
+@app.route('/current', methods=['GET'])
+def get_scores():
+    global VISION
+    global SPEECH
+    scores = {
+        'video': {
+            'displacement': VISION.getTotalDisplacement(),
+            'frames': VISION.getNumFrames(),
+            'currentEmotion': VISION.getCurrentEmotion(),
+            'emotions': VISION.getEmotions()
+        },
+        'audio': SPEECH.getSummary()
+    }
+    #return jsonify(data=scores)
+    return render_template('index.html',data = scores)
+
+
