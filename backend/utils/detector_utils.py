@@ -15,6 +15,12 @@ import math
 detection_graph = tf.Graph()
 sys.path.append("..")
 
+MODEL_NAME = 'hand_inference_graph'
+# Path to frozen detection graph. This is the actual model that is used for the object detection.
+PATH_TO_CKPT = 'backend/hand_inference_graph/frozen_inference_graph.pb'
+# List of the strings that is used to add correct label for each box.
+PATH_TO_LABELS = os.path.join(MODEL_NAME, 'hand_label_map.pbtxt')
+
 NUM_CLASSES = 1
 # load label map
 label_map = label_map_util.load_labelmap('../hand_inference_graph/hand_label_map.pbtxt')
