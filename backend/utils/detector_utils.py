@@ -23,7 +23,7 @@ PATH_TO_LABELS = os.path.join(MODEL_NAME, 'hand_label_map.pbtxt')
 
 NUM_CLASSES = 1
 # load label map
-label_map = label_map_util.load_labelmap('backend/hand_inference_graph/hand_label_map.pbtxt')
+label_map = label_map_util.load_labelmap('../hand_inference_graph/hand_label_map.pbtxt')
 categories = label_map_util.convert_label_map_to_categories(
     label_map, max_num_classes=NUM_CLASSES, use_display_name=True)
 category_index = label_map_util.create_category_index(categories)
