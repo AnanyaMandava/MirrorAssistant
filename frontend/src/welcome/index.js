@@ -6,13 +6,13 @@ import speech from "../images/speech.png";
 import speed from "../images/speedometer.png";
 import volume from "../images/volume.png";
 import realtalklogo from "../images/realtalklogo.png";
+import mirrorlogo from "../images/mirrorimage.png";
 import { fadeIn } from "react-animations";
-
 
 const fader = keyframes`${fadeIn}`;
 
 const Body = styled.header`
-  background: #4ac29a;
+  background: #cc6549;
   background: -webkit-linear-gradient(to bottom, #4ac29a, #bdfff3);
   background: linear-gradient(to bottom, #4ac29a, #bdfff3);
   height: 100vh;
@@ -45,9 +45,9 @@ const Table = styled.table`
 `;
 
 const Cell = styled.td`
-vertical-align: top;
-padding: 20px 30px 30px 30px;
-`
+  vertical-align: top;
+  padding: 20px 30px 30px 30px;
+`;
 const BoxMovement = styled.div`
   border-radius: 15px;
   border: 3px solid #4ac29a;
@@ -63,8 +63,8 @@ const BoxVoice = styled.div`
   background: rgb(255, 255, 255, 0.3);
 `;
 const BoxHeading = styled.p`
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-font-family: "Raleway", sans-serif;
+  @import url("https://fonts.googleapis.com/css?family=Raleway");
+  font-family: "Raleway", sans-serif;
   color: #4c5452;
   font-size: 28px;
   width: 300px;
@@ -76,8 +76,6 @@ const Hand = styled.img`
   animation: 3s ${fader};
   opacity: 0.75;
   margin-top: 15px;
-
-
 `;
 const IconDescriptionHand = styled.p`
   @import url("https://fonts.googleapis.com/css?family=Encode+Sans");
@@ -87,7 +85,6 @@ const IconDescriptionHand = styled.p`
   width: 100%;
   animation: 3s ${fader};
   margin-top: 60px;
-
 `;
 
 const FaceQuestion = styled.img`
@@ -95,8 +92,6 @@ const FaceQuestion = styled.img`
   animation: 6s ${fader};
   opacity: 0.75;
   margin-top: 15px;
-
-
 `;
 const IconDescriptionFace = styled.p`
   @import url("https://fonts.googleapis.com/css?family=Encode+Sans");
@@ -106,8 +101,6 @@ const IconDescriptionFace = styled.p`
   width: 100%;
   animation: 6s ${fader};
   margin-top: 60px;
-
-
 `;
 
 const Speech = styled.img`
@@ -123,8 +116,6 @@ const IconDescriptionSpeech = styled.p`
   width: 100%;
   animation: 3s ${fader};
   margin-top: 30px;
-
-
 `;
 const Speed = styled.img`
   width: 100px;
@@ -139,8 +130,6 @@ const IconDescriptionSpeed = styled.p`
   width: 100%;
   animation: 6s ${fader};
   margin-top: 30px;
-
-
 `;
 const Volume = styled.img`
   width: 100px;
@@ -155,8 +144,6 @@ const IconDescriptionVolume = styled.p`
   width: 100%;
   animation: 9s ${fader};
   margin-top: 30px;
-
-
 `;
 
 const Button = styled.button`
@@ -166,7 +153,7 @@ const Button = styled.button`
   padding: 15px;
   border-radius: 15px;
   border: 1px solid #4ac29a;
-  outline:none;
+  outline: none;
   background-color: white;
   color: #4ac29a;
 `;
@@ -181,17 +168,18 @@ class Welcome extends React.Component {
   render() {
     return (
       <Body>
-
         <div className="Header">
-          <Title><Logo src={realtalklogo}/> Hi. Welcome to Mirror Assistant.</Title>
+          <Title>
+            <Logo src={mirrorlogo} /> Hi. Welcome to Mirror Assistant.
+          </Title>
           <Description>
-          Mirror is designed to help you do better. By monitoring your
+            Mirror is designed to help you do better. By monitoring your
             movements, voice, and providing real-time feedback, this application
             helps you improve your presentation and communication skills.
           </Description>
           <Description>
-            Designed to be a versatile learning tool, Mirror is the ideal
-            app to help you achieve your goals, whatever they may be.
+            Designed to be a versatile learning tool, Mirror is the ideal app to
+            help you achieve your goals, whatever they may be.
           </Description>
         </div>
 
