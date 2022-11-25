@@ -10,7 +10,7 @@ from google.cloud import speech
 import sys
 import time
 
-with open('./fillers.txt') as file:
+with open('backend/fillers.txt') as file:
     fillers = file.read().splitlines()
 
 
