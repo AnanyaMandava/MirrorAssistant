@@ -54,3 +54,12 @@ def create_category_index(categories):
         category_index[cat['id']] = cat
     return category_index
 
+
+
+def send_video():
+    if VISION is not None:
+        VISION.image_queue.put(request.data.decode("utf-8").split(';base64,')[1][:-1])
+        return jsonify(success=True)
+    else:
+        return jsonify(success=False)
+
