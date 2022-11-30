@@ -7,9 +7,8 @@ const fader = keyframes`${fadeIn}`;
 
 const Body = styled.header`
   background: #4ac29a;
-  background: -webkit-linear-gradient(to bottom, #4ac29a, #bdfff3);
-  background: linear-gradient(to bottom, #4ac29a, #bdfff3);
-
+  background: -webkit-linear-gradient(to bottom, #c36332, #f3e0e3);
+  background: linear-gradient(to bottom, #c36332, #f3e0e3);
   width: 100%;
 `;
 const Title = styled.h1`
