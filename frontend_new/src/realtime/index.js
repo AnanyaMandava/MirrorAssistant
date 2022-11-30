@@ -42,8 +42,8 @@ class RealTime extends React.Component {
                     <svg style={{ height: 0 }}>
                         <defs>
                             <linearGradient id="talk-data">
-                                <stop offset="0%" stopColor="#BDFFF3"/>
-                                <stop offset="90%" stopColor="#4AC29A"/>
+                                <stop offset="0%" stopColor="#C36332"/>
+                                <stop offset="90%" stopColor="#f3e0e3"/>
                             </linearGradient>
                         </defs>
                     </svg>
@@ -112,7 +112,7 @@ class RealTime extends React.Component {
                                 id="voice"
                                 record={true}
                                 className="sound-wave"
-                                strokeColor="#4AC29A"
+                                strokeColor="#C36332"
                                 backgroundColor="white" />
                         </div>
                     </div>
