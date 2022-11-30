@@ -7,6 +7,7 @@ import speed from "../images/speedometer.png";
 import volume from "../images/volume.png";
 import realtalklogo from "../images/realtalklogo.png";
 import { fadeIn } from "react-animations";
+import mirrorlogo from "../images/mirror icon.png";
 
 
 const fader = keyframes`${fadeIn}`;
@@ -183,7 +184,7 @@ class Welcome extends React.Component {
       <Body>
 
         <div className="Header">
-          <Title><Logo src={realtalklogo}/> Hi. Welcome to MirrorAssistant</Title>
+          <Title><Logo src={mirrorlogo}/> Hi. Welcome to MirrorAssistant</Title>
           <Description>
           MirrorAssistant is designed to help you do better. By monitoring your
             movements, voice, and providing real-time feedback, this application
