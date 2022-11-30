@@ -28,6 +28,9 @@ from __future__ import division
 import pyaudio
 from six.moves import queue
 
+import os
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "D:\\newMirror\\backend\\apiKey.json"
+
 # Audio recording parameters
 RATE = 16000
 CHUNK = int(RATE / 10)  # 100ms
