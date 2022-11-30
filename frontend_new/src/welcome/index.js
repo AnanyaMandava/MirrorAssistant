@@ -169,7 +169,7 @@ const Button = styled.button`
   border: 1px solid #4ac29a;
   outline:none;
   background-color: white;
-  color: #4ac29a;
+  color: #C36332;
 `;
 
 const Logo = styled.img`
