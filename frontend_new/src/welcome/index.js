@@ -50,14 +50,14 @@ padding: 20px 30px 30px 30px;
 `
 const BoxMovement = styled.div`
   border-radius: 15px;
-  border: 3px solid #4ac29a;
+  border: 3px solid #a64755;
   height: 450px;
   width: 96%;
   background: rgb(255, 255, 255, 0.3);
 `;
 const BoxVoice = styled.div`
   border-radius: 15px;
-  border: 3px solid #4ac29a;
+  border: 3px solid #a64755;
   height: 450px;
   width: 96%;
   background: rgb(255, 255, 255, 0.3);
