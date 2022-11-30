@@ -12,9 +12,9 @@ import { fadeIn } from "react-animations";
 const fader = keyframes`${fadeIn}`;
 
 const Body = styled.header`
-  background: #4ac29a;
-  background: -webkit-linear-gradient(to bottom, #4ac29a, #bdfff3);
-  background: linear-gradient(to bottom, #4ac29a, #bdfff3);
+  background: #CD6155 
+  background: -webkit-linear-gradient(to bottom, #C36332, #F3E0E3);
+  background: linear-gradient(to bottom, #C36332, #F3E0E3);
   height: 100vh;
   width: 100%;
   font-color: white;
