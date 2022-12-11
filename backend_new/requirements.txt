@@ -1,9 +1,9 @@
 Flask
 opencv-python
-tensorflow
 Keras
 numpy
-google-cloud-speech
-google-cloud-vision
-pyaudio
 six
+flask_cors
+pandas
+matplotlib
+scipy
