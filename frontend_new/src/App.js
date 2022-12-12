@@ -41,7 +41,7 @@ class App extends Component {
         });
       }
     }.bind(this);
-    xhr.open("GET", "http://localhost:5000/current", true);
+    xhr.open("GET", "http://ec2-3-137-185-213.us-east-2.compute.amazonaws.com:5000/current", true);
     xhr.send(null);
   };
   calculateScore = () => {
@@ -75,7 +75,7 @@ class App extends Component {
         })
       }
     }.bind(this);
-    xhr.open("GET", "http://localhost:5000/start", true);
+    xhr.open("GET", "http://ec2-3-137-185-213.us-east-2.compute.amazonaws.com:5000/start", true);
     xhr.send(null);
 }
 
