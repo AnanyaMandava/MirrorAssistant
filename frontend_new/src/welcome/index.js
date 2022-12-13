@@ -7,13 +7,13 @@ import speed from "../images/speedometer.png";
 import volume from "../images/volume.png";
 import realtalklogo from "../images/realtalklogo.png";
 import { fadeIn } from "react-animations";
-import mirrorlogo from "../images/mirror icon.png";
+import mirrorlogo from "../images/mirror icon.png"; 
 
 
 const fader = keyframes`${fadeIn}`;
 
 const Body = styled.header`
-  background: #CD6155 
+  background: #CD6155;
   background: -webkit-linear-gradient(to bottom, #C36332, #F3E0E3);
   background: linear-gradient(to bottom, #C36332, #F3E0E3);
   height: 100vh;

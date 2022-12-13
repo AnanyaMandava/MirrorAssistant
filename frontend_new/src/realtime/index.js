@@ -17,7 +17,7 @@ class RealTime extends React.Component {
       };    
     capture = () => {
         const imageSrc = this.webcam.getScreenshot();
-        var url = "http://ec2-3-137-185-213.us-east-2.compute.amazonaws.com:5000/sendVideo";
+        var url = "http://localhost:5000/sendVideo";
 
         var json = JSON.stringify(imageSrc);
         
